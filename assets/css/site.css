@@ -270,3 +270,22 @@ p{margin:0 0 1em}
 @media print{.subscribe{display:none}}
 .brand-name small.est{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--taro);opacity:.85;margin-top:.1rem}
 .site-footer .est{font-weight:500;opacity:.85}
+
+/* Contact enquiry form (contact.html) */
+.contact-grid.has-form{align-items:start}
+@media (min-width:700px) and (max-width:979px){.contact-grid.has-form{grid-template-columns:1fr}}
+@media (min-width:980px){.contact-grid.has-form{grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr)}.contact-grid.has-form .contact-card{position:sticky;top:16px}}
+.enquiry{margin:0}
+.subscribe input[type=tel],.subscribe select,.subscribe textarea{font:1rem/1.4 var(--sans);color:var(--ink);background:var(--white);border:1.5px solid #9C998D;border-radius:4px;padding:11px 12px;width:100%;min-height:46px;min-width:0}
+.subscribe select{appearance:none;-webkit-appearance:none;padding-right:38px;background-image:linear-gradient(45deg,transparent 50%,var(--taro) 50%),linear-gradient(135deg,var(--taro) 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 12px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.subscribe textarea{resize:vertical;min-height:120px}
+.subscribe select:focus-visible,.subscribe textarea:focus-visible{outline:3px solid var(--ring);outline-offset:1px;border-color:var(--taro)}
+.subscribe .req{color:var(--taro);font-style:normal;font-weight:600}
+.subscribe .form-sec{font:600 .75rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ring);margin:6px 0 -4px;padding-top:10px;border-top:1px solid var(--stone)}
+.subscribe fieldset.needs{border:0;margin:0;padding:0;min-width:0}
+.subscribe fieldset.needs legend{font:600 .9rem/1.35 var(--sans);color:var(--ink);padding:0;margin:0 0 8px}
+.subscribe .check-grid{display:grid;gap:8px 16px;grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+.subscribe .check-grid label{display:flex;gap:8px;align-items:center;font:400 .95rem/1.35 var(--sans);color:var(--ink);background:var(--white);border:1px solid var(--stone);border-radius:4px;padding:9px 10px;cursor:pointer}
+.subscribe .check-grid input{width:18px;height:18px;margin:0;flex:none;accent-color:var(--taro)}
+.subscribe .check-grid label:has(input:checked){border-color:var(--taro);background:var(--wash)}
+.subscribe .form-note{font:400 .85rem/1.5 var(--sans);color:var(--soil);margin:0}
