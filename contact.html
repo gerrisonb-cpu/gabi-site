@@ -28,7 +28,7 @@
 <link rel="preload" href="assets/fonts/jost-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/literata-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/fonts.css?v=5">
-<link rel="stylesheet" href="assets/css/site.css?v=5">
+<link rel="stylesheet" href="assets/css/site.css?v=6">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Green Action Brigade Inc.", "alternateName": "GABI", "url": "https://gabi.ph/", "email": "jeff@gabi.ph", "logo": "https://gabi.ph/assets/img/gabi-logo-480.png", "image": "https://gabi.ph/assets/img/og-default.png", "address": {"@type": "PostalAddress", "streetAddress": "4th Floor Ricogen Building, Aguirre Street, Legaspi Village", "addressLocality": "Makati City", "postalCode": "1203", "addressCountry": "PH"}, "areaServed": "PH", "description": "Philippine agrochemical regulatory consultancy: FPA pesticide and fertilizer registration, renewals, labels, EUPs and trials coordination."}</script>
 </head>
 <body>
@@ -39,7 +39,7 @@
    <picture><source type="image/webp" srcset="assets/img/gabi-logo-240.webp"><img src="assets/img/gabi-logo-240.png" width="96" height="110" alt="GABI, Green Action Brigade Inc."></picture>
    <span class="brand-name">Green Action Brigade Inc.<small>FPA regulatory consultancy · Makati City</small><small class="est">Est. 2020</small></span>
   </a>
-  <nav class="nav" aria-label="Main"><ul><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li><a href="weekly/"><span class="hide-sm">The </span>Green Brief</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a class="btn-nav" href="contact.html">Email us</a></li></ul></nav>
+  <nav class="nav" aria-label="Main"><ul><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li><a href="weekly/"><span class="hide-sm">The </span>Green Brief</a></li><li><a class="btn-nav" href="contact.html" aria-current="page">Email us</a></li></ul></nav>
  </div>
 </header>
 <main id="main">
@@ -48,9 +48,9 @@
   <span class="kicker">Contact</span>
   <h1>Talk to GABI</h1>
   <div class="midrib dot" aria-hidden="true"></div>
-  <p class="lede">Email is the fastest way to reach us. Tell us what you need registered, renewed or revised.</p>
+  <p class="lede">Email us, or tell us about your product in the form below. We reply by email.</p>
  </section>
- <div class="contact-grid" style="padding:12px 0 56px">
+ <div class="contact-grid has-form" style="padding:12px 0 56px">
   <section class="contact-card" aria-labelledby="c-h">
    <h2 id="c-h" style="font-size:1.3rem">Green Action Brigade Inc.</h2>
    <dl>
@@ -74,21 +74,51 @@
    })();
    </script>
   </section>
-  <section aria-labelledby="send-h">
-   <h2 id="send-h" style="font-size:1.3rem">What to put in your first email</h2>
-   <ul class="checklist">
-    <li>Your company name and country</li>
-    <li>Product name and type: pesticide, fertilizer or other</li>
-    <li>Active ingredient(s) and concentration</li>
-    <li>Formulation, for example EC, SC, WP or granular</li>
-    <li>Intended crops and pests, or intended use</li>
-    <li>Registration status in other countries, if any</li>
-    <li>What you need: new registration, renewal, label revision, EUP, FDA filing or market entry</li>
-   </ul>
-   <p class="muted small">Please do not send confidential study reports until we have agreed how they will be handled.</p>
+  <section class="subscribe enquiry" aria-labelledby="send-h">
+   <h2 id="send-h">Tell us about your product</h2>
+   <p>Fields marked <span class="req">*</span> are required. The more you tell us, the faster we can reply with next steps.</p>
+   <form action="https://formsubmit.co/b0a8efc74737ae92e1e23c22b9d89d96" method="POST" accept-charset="UTF-8">
+    <input type="hidden" name="_subject" value="New enquiry from gabi.ph"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="form" value="contact enquiry"><input type="hidden" name="_next" value="https://gabi.ph/contact-thanks.html" data-next="contact-thanks.html">
+    <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+    <p class="form-sec">About you</p>
+    <div class="sub-grid">
+     <label for="enq-name"><span class="lt">Name <span class="req">*</span></span><input id="enq-name" type="text" name="name" required autocomplete="name"></label>
+     <label for="enq-email"><span class="lt">Email <span class="req">*</span></span><input id="enq-email" type="email" name="email" required autocomplete="email" placeholder="name@company.com"></label>
+     <label for="enq-company"><span class="lt">Company <span class="req">*</span></span><input id="enq-company" type="text" name="company" required autocomplete="organization"></label>
+     <label for="enq-country"><span class="lt">Country <span class="req">*</span></span><input id="enq-country" type="text" name="country" required autocomplete="country-name"></label>
+     <label class="full" for="enq-phone"><span class="lt">Phone <em>(optional)</em></span><input id="enq-phone" type="tel" name="phone" autocomplete="tel" placeholder="+63 ..."></label>
+    </div>
+    <p class="form-sec">About the product</p>
+    <div class="sub-grid">
+     <label for="enq-product"><span class="lt">Product name <span class="req">*</span></span><input id="enq-product" type="text" name="product_name" required></label>
+     <label for="enq-type"><span class="lt">Product type <span class="req">*</span></span><select id="enq-type" name="product_type" required><option value="" selected disabled>Choose one</option><option>Pesticide</option><option>Fertilizer</option><option>Other</option></select></label>
+     <label class="full" for="enq-ai"><span class="lt">Active ingredient(s) and concentration</span><input id="enq-ai" type="text" name="active_ingredients" placeholder="e.g. Glyphosate 480 g/L"></label>
+     <label for="enq-form"><span class="lt">Formulation</span><input id="enq-form" type="text" name="formulation" placeholder="e.g. EC, SC, WP, granular"></label>
+     <label for="enq-crops"><span class="lt">Intended crops and pests, or use</span><input id="enq-crops" type="text" name="crops_pests_use" placeholder="e.g. Rice, stem borer"></label>
+     <label class="full" for="enq-status"><span class="lt">Registration status in other countries</span><input id="enq-status" type="text" name="registration_elsewhere" placeholder="e.g. Registered in Vietnam and Thailand"></label>
+    </div>
+    <fieldset class="needs">
+     <legend>What you need</legend>
+     <div class="check-grid">
+      <label><input type="checkbox" name="needs" value="New registration"> New registration</label>
+      <label><input type="checkbox" name="needs" value="Renewal"> Renewal</label>
+      <label><input type="checkbox" name="needs" value="Label revision"> Label revision</label>
+      <label><input type="checkbox" name="needs" value="EUP"> EUP</label>
+      <label><input type="checkbox" name="needs" value="FDA filing"> FDA filing</label>
+      <label><input type="checkbox" name="needs" value="Market entry"> Market entry</label>
+      <label><input type="checkbox" name="needs" value="Other"> Other</label>
+     </div>
+    </fieldset>
+    <label for="enq-msg"><span class="lt">Message</span><textarea id="enq-msg" name="message" rows="5" placeholder="Timelines, questions, or anything else we should know"></textarea></label>
+    <p class="form-note">Please do not send confidential study reports until we have agreed how they will be handled.</p>
+    <label class="consent"><input type="checkbox" name="consent" value="yes" required> <span>GABI may use these details to reply to my enquiry. They are not sold or shared; the form is processed by our email form service (<a href="disclaimer.html#privacy">privacy</a>). <em>(required)</em></span></label>
+    <button class="btn btn-green" type="submit">Send enquiry</button>
+   </form>
   </section>
  </div>
 </div>
+<script>/* point the post-submit redirect at the host the page is served from */
+document.querySelectorAll('input[data-next]').forEach(function(i){if(location.protocol.indexOf('http')===0){i.value=new URL(i.getAttribute('data-next'),location.href).href;}});</script>
 </main>
 <footer class="site-footer">
  <div class="wrap">
