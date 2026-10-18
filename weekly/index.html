@@ -39,7 +39,7 @@
    <picture><source type="image/webp" srcset="../assets/img/gabi-logo-240.webp"><img src="../assets/img/gabi-logo-240.png" width="96" height="110" alt="GABI, Green Action Brigade Inc."></picture>
    <span class="brand-name">Green Action Brigade Inc.<small>FPA regulatory consultancy · Makati City</small><small class="est">Est. 2020</small></span>
   </a>
-  <nav class="nav" aria-label="Main"><ul><li><a href="../">Home</a></li><li><a href="../services.html">Services</a></li><li><a href="../weekly/" aria-current="page"><span class="hide-sm">The </span>Green Brief</a></li><li><a href="../contact.html">Contact</a></li><li><a class="btn-nav" href="../contact.html">Email us</a></li></ul></nav>
+  <nav class="nav" aria-label="Main"><ul><li><a href="../">Home</a></li><li><a href="../services.html">Services</a></li><li><a href="../weekly/" aria-current="page"><span class="hide-sm">The </span>Green Brief</a></li><li><a class="btn-nav" href="../contact.html">Email us</a></li></ul></nav>
  </div>
 </header>
 <main id="main">
@@ -62,9 +62,9 @@
   <section class="subscribe card" aria-labelledby="sub-archive-h">
  <h2 id="sub-archive-h">Get it every week by email</h2>
  <p>Free, once a week: Philippine and global agrochem news on regulation, prices and pests, each item checked against a dated public source.</p>
- <form action="https://formsubmit.co/b0a8efc74737ae92e1e23c22b9d89d96" method="POST" accept-charset="UTF-8">
+ <form action="https://formsubmit.co/b0a8efc74737ae92e1e23c22b9d89d96" method="POST" accept-charset="UTF-8" data-gb-signup>
   <input type="hidden" name="_subject" value="New Green Brief subscriber"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="signup_page" value="weekly archive"><input type="hidden" name="_next" value="https://gabi.ph/weekly/subscribe/thanks/" data-next="../weekly/subscribe/thanks/"><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div><div class="sub-grid"><label class="full" for="sub-archive-email"><span class="lt">Email address</span><input id="sub-archive-email" type="email" name="email" required autocomplete="email" placeholder="name@company.com"></label><label for="sub-archive-name"><span class="lt">Name <em>(optional)</em></span><input id="sub-archive-name" type="text" name="name" autocomplete="name"></label><label for="sub-archive-company"><span class="lt">Company <em>(optional)</em></span><input id="sub-archive-company" type="text" name="company" autocomplete="organization"></label><label class="full" for="sub-archive-role"><span class="lt">Role <em>(optional)</em></span><input id="sub-archive-role" type="text" name="role" autocomplete="organization-title" placeholder="e.g. Regulatory manager"></label></div>
-  <label class="consent"><input type="checkbox" name="consent" value="yes" required> <span>Yes, email me The Green Brief (Weekly) by GABI. I can unsubscribe at any time by replying "unsubscribe". GABI uses these details only to send the brief and does not sell them; the form is processed by our email form service (<a href="../disclaimer.html#privacy">privacy</a>). <em>(required)</em></span></label>
+  <label class="consent"><input type="checkbox" name="consent" value="yes" required> <span>Yes, email me The Green Brief (Weekly) by GABI. I can unsubscribe at any time by replying "unsubscribe". GABI uses these details only to send the brief and does not sell them; sign-ups go to GABI's own subscriber list, with an email form service as a backup (<a href="../disclaimer.html#privacy">privacy</a>). <em>(required)</em></span></label>
   <button class="btn btn-green" type="submit">Subscribe, it is free</button>
  </form>
 </section>
@@ -75,6 +75,7 @@
 </div>
 <script>/* point the post-submit redirect at the host the page is served from */
 document.querySelectorAll('input[data-next]').forEach(function(i){if(location.protocol.indexOf('http')===0){i.value=new URL(i.getAttribute('data-next'),location.href).href;}});</script>
+<script src="../assets/js/signup.js" defer></script>
 </main>
 <footer class="site-footer">
  <div class="wrap">
