@@ -39,7 +39,7 @@
    <picture><source type="image/webp" srcset="assets/img/gabi-logo-240.webp"><img src="assets/img/gabi-logo-240.png" width="96" height="110" alt="GABI, Green Action Brigade Inc."></picture>
    <span class="brand-name">Green Action Brigade Inc.<small>FPA regulatory consultancy · Makati City</small><small class="est">Est. 2020</small></span>
   </a>
-  <nav class="nav" aria-label="Main"><ul><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li><a href="weekly/"><span class="hide-sm">The </span>Green Brief</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a class="btn-nav" href="mailto:jeff@gabi.ph">Email us</a></li></ul></nav>
+  <nav class="nav" aria-label="Main"><ul><li><a href="./">Home</a></li><li><a href="services.html">Services</a></li><li><a href="weekly/"><span class="hide-sm">The </span>Green Brief</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a class="btn-nav" href="contact.html">Email us</a></li></ul></nav>
  </div>
 </header>
 <main id="main">
@@ -54,14 +54,25 @@
   <section class="contact-card" aria-labelledby="c-h">
    <h2 id="c-h" style="font-size:1.3rem">Green Action Brigade Inc.</h2>
    <dl>
-    <dt>Email</dt><dd><a href="mailto:jeff@gabi.ph?subject=FPA%20registration%20enquiry">jeff@gabi.ph</a></dd>
+    <dt>Email</dt><dd><strong id="gabi-email" style="font-size:1.2rem;user-select:all">jeff@gabi.ph</strong></dd>
     <dt>Office</dt><dd><address>4th Floor Ricogen Building<br>Aguirre Street, Legaspi Village<br>Makati City 1203, Philippines</address>
      <p style="margin:.6em 0 0"><a class="more" href="https://www.google.com/maps/search/?api=1&query=Ricogen+Building%2C+Aguirre+Street%2C+Legaspi+Village%2C+Makati+City+1203%2C+Philippines" target="_blank" rel="noopener">Open in Google Maps</a></p></dd>
     <dt>Website</dt><dd><a href="https://gabi.ph/">gabi.ph</a></dd>
     <!-- Phone slot: add when ready
     <dt>Phone</dt><dd><a href="tel:+63XXXXXXXXXX">+63 X XXXX XXXX</a></dd> -->
    </dl>
-   <div class="actions"><a class="btn btn-green" href="mailto:jeff@gabi.ph?subject=FPA%20registration%20enquiry">Email us</a></div>
+   <div class="actions">
+    <a class="btn btn-green" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jeff@gabi.ph&amp;su=FPA%20registration%20enquiry" target="_blank" rel="noopener">Open in Gmail</a>
+    <button type="button" class="btn btn-outline" id="copy-email" data-email="jeff@gabi.ph" style="cursor:pointer">Copy email</button>
+    <a class="btn btn-outline" href="mailto:jeff@gabi.ph?subject=FPA%20registration%20enquiry">Use my mail app</a>
+   </div>
+   <script>
+   (function(){var b=document.getElementById('copy-email');if(!b)return;var t=b.textContent;
+    function done(){b.textContent='Copied';setTimeout(function(){b.textContent=t},1800)}
+    function fb(e){var a=document.createElement('textarea');a.value=e;a.setAttribute('readonly','');a.style.position='absolute';a.style.left='-9999px';document.body.appendChild(a);a.select();try{document.execCommand('copy');done()}catch(x){window.prompt('Copy this email address:',e)}document.body.removeChild(a)}
+    b.addEventListener('click',function(){var e=b.getAttribute('data-email');if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(e).then(done,function(){fb(e)})}else{fb(e)}});
+   })();
+   </script>
   </section>
   <section aria-labelledby="send-h">
    <h2 id="send-h" style="font-size:1.3rem">What to put in your first email</h2>
