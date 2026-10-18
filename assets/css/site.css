@@ -268,3 +268,5 @@ p{margin:0 0 1em}
 .archive-side .subscribe{margin-top:0}
 .ticks-sm{font:1rem/1.6 var(--sans);padding-left:1.2em;margin:0}
 @media print{.subscribe{display:none}}
+.brand-name small.est{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--taro);opacity:.85;margin-top:.1rem}
+.site-footer .est{font-weight:500;opacity:.85}
