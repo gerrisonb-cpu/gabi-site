@@ -289,3 +289,10 @@ p{margin:0 0 1em}
 .subscribe .check-grid input{width:18px;height:18px;margin:0;flex:none;accent-color:var(--taro)}
 .subscribe .check-grid label:has(input:checked){border-color:var(--taro);background:var(--wash)}
 .subscribe .form-note{font:400 .85rem/1.5 var(--sans);color:var(--soil);margin:0}
+
+/* Floating home button */
+.home-fab{position:fixed;right:20px;bottom:20px;z-index:50;width:52px;height:52px;border-radius:50%;background:var(--taro);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(23,32,26,.25);transition:transform .15s,background .15s}
+.home-fab:hover{background:var(--olive);color:#fff;transform:translateY(-2px)}
+.home-fab svg{width:24px;height:24px}
+@media (max-width:600px){.home-fab{right:14px;bottom:14px;width:46px;height:46px}}
+@media print{.home-fab{display:none}}
