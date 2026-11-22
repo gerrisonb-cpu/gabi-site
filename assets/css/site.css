@@ -297,6 +297,7 @@ p{margin:0 0 1em}
 .home-fab:hover{background:var(--olive);color:#fff;transform:translateY(-2px)}
 .home-fab:focus-visible{outline-color:#fff}
 .home-fab svg{width:24px;height:24px}
+.home-fab[data-page-scroll]{touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 .site-footer{padding-bottom:calc(22px + 20px + 52px * 3 + 10px * 2)}
 @media (max-width:699px){
   main .wrap,.site-footer .wrap{padding-right:84px}
