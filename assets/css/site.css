@@ -290,9 +290,23 @@ p{margin:0 0 1em}
 .subscribe .check-grid label:has(input:checked){border-color:var(--taro);background:var(--wash)}
 .subscribe .form-note{font:400 .85rem/1.5 var(--sans);color:var(--soil);margin:0}
 
-/* Floating home button */
-.home-fab{position:fixed;right:20px;bottom:20px;z-index:50;width:52px;height:52px;border-radius:50%;background:var(--taro);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(23,32,26,.25);transition:transform .15s,background .15s}
+/* Floating page controls: page up, page down, and the home button.
+   The home button stays at the bottom-right. The scroll buttons sit above it. */
+.fab-stack{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;flex-direction:column;gap:10px}
+.home-fab{flex:none;width:52px;height:52px;border:0;padding:0;border-radius:50%;background:var(--taro);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(23,32,26,.25);transition:transform .15s,background .15s;cursor:pointer;text-decoration:none;-webkit-appearance:none;appearance:none}
 .home-fab:hover{background:var(--olive);color:#fff;transform:translateY(-2px)}
+.home-fab:focus-visible{outline-color:#fff}
 .home-fab svg{width:24px;height:24px}
-@media (max-width:600px){.home-fab{right:14px;bottom:14px;width:46px;height:46px}}
-@media print{.home-fab{display:none}}
+.site-footer{padding-bottom:calc(22px + 20px + 52px * 3 + 10px * 2)}
+@media (max-width:699px){
+  main .wrap,.site-footer .wrap{padding-right:84px}
+  .hero-panel{margin-left:-20px;margin-right:0}
+}
+@media (max-width:600px){
+  .fab-stack{right:14px;bottom:14px;gap:8px}
+  .home-fab{width:46px;height:46px}
+  .home-fab svg{width:22px;height:22px}
+  main .wrap,.site-footer .wrap{padding-right:76px}
+  .site-footer{padding-bottom:calc(22px + 14px + 46px * 3 + 8px * 2)}
+}
+@media print{.fab-stack,.home-fab{display:none}}
